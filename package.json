@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "daisyui": "^2.51.4",
-        "react-router-dom": "^6.9.0"
+        "react-router-dom": "^6.9.0",
+        "react-scroll": "^1.8.9"
     }
 }

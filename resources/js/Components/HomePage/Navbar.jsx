@@ -1,6 +1,14 @@
+import React, { useState } from "react"
 import { Link } from "@inertiajs/react"
+import { Link as ScrollLink} from "react-scroll"
 
 const Navbar = ({ user }) => {
+
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
+
+  const closeMenu = () => setClick(false)
+
     return (
         <div className="navbar text-lg text-white bg-black">
   <div className="navbar-start">
@@ -22,8 +30,8 @@ YukReview</a>
 
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a href="">Movie</a></li>
-      <li><a href="">Trending</a></li>
+      <li><ScrollLink to="movieList" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Movies</ScrollLink></li>
+      <li><a href="">Top Lists</a></li>
       <li><a>News</a></li>
     </ul>
   </div>
