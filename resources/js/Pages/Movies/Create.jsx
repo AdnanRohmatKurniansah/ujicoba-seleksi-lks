@@ -74,6 +74,17 @@ export default function Dashboard(props) {
                                             {errors.genre}
                                         </span>
                                     </div>
+{/* <div className="form-control">
+    <label htmlFor="genre">Genre</label>
+  <div className="input-group">
+    <select className="select select-bordered w-full" id='genre'>
+      <option disabled selected>Pick Genre</option>
+      <option value={data.genre} name="genre" onChange={(e) => setData("genre", e.target.value)}>Action</option>
+      <option value={data.genre} name="genre" onChange={(e) => setData("genre", e.target.value)}>Comedy</option>
+      <option value={data.genre} name="genre" onChange={(e) => setData("genre", e.target.value)}>Horror</option>
+    </select>
+  </div>
+</div> */}
                                     <div className="mb-4">
                                         <label className="">Duration</label>
                                         <input

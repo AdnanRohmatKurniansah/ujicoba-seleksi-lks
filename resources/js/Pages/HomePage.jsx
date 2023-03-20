@@ -6,9 +6,9 @@ import Footer from '@/Components/HomePage/footer';
 import Paginator from '@/Components/HomePage/Paginator';
 
 export default function HomePage(props) {// props utk mengambil data
-    //console.log('props: ', props)
-    
-      
+    console.log('props: ', props)
+
+ 
     return (
         <div className='bg-white'>
             <Head title= {props.title}/>

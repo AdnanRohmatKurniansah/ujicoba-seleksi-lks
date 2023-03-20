@@ -52,7 +52,7 @@ class MoviesController extends Controller
    
         Movie::create($request->all());
     
-        return redirect()->route('movies.view');
+        return redirect()->route('movies.index');
     }
 
     /**

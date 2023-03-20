@@ -1,13 +1,14 @@
 import React from 'react';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import { Head, usePage, Link } from '@inertiajs/react';
+import { Head, usePage, Link,  } from '@inertiajs/react';
+import { Inertia } from '@inertiajs/inertia';
 
 export default function Dashboard(props) {
     const { movies } = usePage().props
   
     function destroy(e) {
         if (confirm("Are you sure you want to delete this?")) {
-            Ineetia.delete(route("movies.destroy", e.currentTarget.id));
+            Inertia.delete(route("movies.destroy", e.currentTarget.id));
         }
     }
 
